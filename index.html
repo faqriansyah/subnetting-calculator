@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subnetting Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Subnetting Calculator</h1>
+
+        <div class="input-group">
+            <input type="text"id="ip-address"  placeholder="Enter IP Address">
+            <span class="slash">/</span>
+            <input type="text" id="prefix" class="prefix" placeholder="Prefix">
+        </div>
+
+        <button class="button">Calculate</button>
+
+        <div class="result-box">
+            <p><strong id="network-address">Network Address:</strong> -</p>
+            <p><strong id="broadcast-address">Broadcast Address:</strong> -</p>
+            <p><strong id="host-address">Host Address Range:</strong> -</p>
+        </div>
+    </div>
+    <script src="js/subnetting.js"></script>
+</body>
+
+</html>
