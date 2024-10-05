@@ -21,6 +21,3 @@ const convert = (p, base) => {
     if (base == 2) return convert_decimal_to_binary(p);
     if (base == 8) return convert_binary_to_decimal(p);
 }
-
-console.log(convert(244, 2));
-console.log(convert("11110100", 8))
