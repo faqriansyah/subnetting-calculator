@@ -1,6 +1,7 @@
 const specialNumber = [128, 64, 32, 16, 8, 4, 2, 1];
 
 const convert_decimal_to_binary = (dec) => {
+    if(filter(dec, 8)) return
     let binary = "";
     for (let i = 0; i < specialNumber.length; i++) {
         binary += dec >= specialNumber[i] ? "1" : "0";
@@ -8,6 +9,7 @@ const convert_decimal_to_binary = (dec) => {
     }
     return binary;
 }
+
 
 const convert_binary_to_decimal = (bin) => {
     let decimal = 0;
